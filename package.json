@@ -1,0 +1,18 @@
+{
+  "name": "tsp",
+  "version": "1.0.0",
+  "description": "Quickly scaffold a TypeScript project",
+  "main": "tsp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Andrew Xanthos",
+  "license": "ISC",
+  "bin": {
+    "tsp": "tsp.js"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.13"
+  }
+}
