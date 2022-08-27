@@ -31,3 +31,19 @@ tsp webExample web
 ```
 
 The `web` argument automatically installs a variety of NPM packages that I often use when building web apps. Their type declarations are installed as dev dependencies.
+
+---
+
+### What does it actually do?
+
+For a standard project (e.g. not a web project), the script will:
+
+1. Create a new directory for your project.
+
+2. Create a `src` sub-directory for your TypeScript code and a `dist` sub-directory for the resulting JavaScript.
+
+3. Copy sensible default `tsconfig.json` and `package.json` files into the new project directory.
+
+4. Creates an empty TypeScript file at `/src/main.ts`
+
+5. Installs `@types/node`

@@ -71,7 +71,9 @@ if (process.argv[3] && process.argv[3] == 'web') {
     console.log('✅ ...and the associated type declarations');
 } else {
     // Otherwise, we'll still want the node types
-    child.spawnSync('npm', ['install', '@types/node']);
+    child.spawnSync('npm', ['install', '-D', '@types/node'], {
+        cwd: projectPath
+    });
     console.log('✅ Installed Node.js type definitions');
 }
 
